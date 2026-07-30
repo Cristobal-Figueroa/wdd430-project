@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Handcrafted Haven
+
+A Next.js web application that provides a platform for artisans and crafters to showcase and sell their unique handcrafted items.
+
+## Project Overview
+
+Handcrafted Haven is a virtual marketplace connecting talented creators with customers who appreciate the beauty and quality of handmade products. The application focuses on fostering community, supporting local artisans, and promoting sustainable consumption.
+
+## Features
+
+- **Seller Profiles**: Authenticated sellers can showcase their craftsmanship and display curated collections
+- **Product Listings**: Artisans can list handcrafted items with descriptions, pricing, and images
+- **Product Browsing**: Users can browse, filter by category, price range, and other criteria
+- **Reviews and Ratings**: Users can leave ratings and written reviews for products
+
+## Tech Stack
+
+- **Front-End**: Next.js, TypeScript, HTML, CSS, JavaScript
+- **Back-End**: Node.js, PostgreSQL
+- **Deployment**: Vercel
+- **Project Management**: GitHub Boards
+- **Code Management**: Git and GitHub Repository
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Author
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Cristobal Figueroa
