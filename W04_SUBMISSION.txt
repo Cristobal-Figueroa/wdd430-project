@@ -1,0 +1,54 @@
+W04 Group Project - Canvas Submission Information
+
+1. PROJECT REPO URL
+
+https://github.com/Cristobal-Figueroa/wdd430-project
+
+The repository contains Next.js application artifacts with:
+- Next.js project with TypeScript and ESLint
+- Landing page for Handcrafted Haven (completed in W03)
+- Design documentation (DESIGN.md)
+- User stories and work items (USER_STORIES.md)
+- Project README
+
+2. PROJECT BOARD URL
+
+https://github.com/users/Cristobal-Figueroa/projects/3
+
+The board includes the following columns:
+- Ready
+- Backlog
+- In progress
+- In review
+- Done
+
+Work completed since W03:
+- Landing Page moved to Done (completed in W03)
+- Product Browsing and Product Detail View moved to In progress (selected for W04 build)
+- Additional work items assigned for upcoming development
+
+3. MEETING SUMMARY
+
+Meeting Summary:
+- Participant: Cristobal Figueroa (individual project)
+- Project: Handcrafted Haven (Next.js)
+- Date: July 23, 2026
+
+Challenge:
+Working individually on the build phase required careful prioritization of features. The main challenge was determining which user stories to implement first without having team members to divide the workload. I needed to balance complexity with deliverable progress within the week timeframe.
+
+Success:
+Successfully updated the project board to reflect progress from W03, moving the Landing Page to Done and identifying the next priority features (Product Browsing and Product Detail View) for implementation. This provides clear direction for the upcoming development work and demonstrates measurable progress.
+
+Insight:
+The build phase highlighted the importance of breaking down user stories into smaller, manageable tasks. Having the initial planning from W02 and the setup from W03 made it much easier to move forward with actual implementation. This experience reinforced that good upfront planning continues to pay dividends throughout the project lifecycle.
+
+Meeting Content:
+- Reviewed progress from W03 and confirmed Landing Page completion
+- Discussed which user stories to prioritize for W04 build phase
+- Selected Product Browsing and Product Detail View as next priority features
+- Updated GitHub Projects board to reflect current status and upcoming work
+- Identified tasks and subtasks for the selected features
+- Planned next steps for implementation in the coming weeks
+
+END OF SUBMISSION INFORMATION
