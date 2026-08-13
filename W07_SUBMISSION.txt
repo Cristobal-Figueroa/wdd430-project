@@ -1,0 +1,56 @@
+W07 Project Completion - Canvas Submission Information
+
+1. APPLICATION URL (Vercel)
+
+[UPDATE WITH YOUR VERCEL URL AFTER DEPLOYMENT]
+
+The Next.js application has been built successfully and is ready for deployment.
+
+2. PROJECT BOARD URL
+
+https://github.com/users/Cristobal-Figueroa/projects/3
+
+The board includes the following columns:
+- Ready
+- Backlog
+- In progress
+- In review
+- Done
+
+Work completed:
+- Landing Page: Done
+- Product Browsing: In progress / Done
+- Product Detail View: In progress / Done
+- Seller Profile Viewing: In progress / Done
+- Shopping Cart: In progress / Done
+
+3. REPOSITORY URL
+
+https://github.com/Cristobal-Figueroa/wdd430-project
+
+The repository contains Next.js application artifacts with:
+- Next.js project with TypeScript and ESLint
+- Landing page, product catalog, product detail pages, seller profiles, and shopping cart
+- Design documentation (DESIGN.md)
+- User stories and work items (USER_STORIES.md)
+- Project README
+
+4. GROUP VIDEO DEMONSTRATION
+
+[UPDATE WITH YOUR VIDEO URL OR FILE NAME]
+
+The video demonstrates the Handcrafted Haven application including:
+- Landing page with hero section, featured products, and artisans
+- Product catalog page with all handcrafted items
+- Product detail page with description and pricing
+- Seller profile pages with bio and products
+- Shopping cart page with items and total
+
+5. PROJECT FUNCTIONALITY
+
+The web application delivers the following functionality:
+- Landing page with navigation to products, sellers, and cart
+- Product browsing page showing all handcrafted products
+- Product detail page for each item with description and seller information
+- Seller profile page for each artisan with bio and product collection
+- Shopping cart page displaying items and total price

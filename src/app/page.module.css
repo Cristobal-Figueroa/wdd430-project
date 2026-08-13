@@ -70,6 +70,7 @@
   cursor: pointer;
   font-weight: 600;
   transition: background-color 0.2s;
+  text-decoration: none;
 }
 
 .ctaButton:hover {
@@ -115,6 +116,7 @@
 }
 
 .primaryButton {
+  display: inline-block;
   background-color: white;
   color: var(--primary);
   border: none;
@@ -124,6 +126,7 @@
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.2s;
+  text-decoration: none;
 }
 
 .primaryButton:hover {
@@ -131,6 +134,7 @@
 }
 
 .secondaryButton {
+  display: inline-block;
   background-color: transparent;
   color: white;
   border: 2px solid white;
@@ -140,6 +144,7 @@
   font-weight: 600;
   font-size: 1rem;
   transition: all 0.2s;
+  text-decoration: none;
 }
 
 .secondaryButton:hover {
@@ -168,11 +173,14 @@
 }
 
 .productCard {
+  display: block;
   background-color: var(--card-background);
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   transition: box-shadow 0.2s;
+  text-decoration: none;
+  color: inherit;
 }
 
 .productCard:hover {
@@ -219,11 +227,14 @@
 }
 
 .sellerCard {
+  display: block;
   background-color: var(--card-background);
   border-radius: 8px;
   padding: 2rem;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: inherit;
 }
 
 .sellerAvatar {
