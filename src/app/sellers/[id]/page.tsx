@@ -42,15 +42,17 @@ export default async function SellerDetailPage({ params }: SellerPageProps) {
       <main className={styles.main}>
         <section className={styles.about}>
           <div className={styles.aboutContent} style={{ maxWidth: "900px", textAlign: "left" }}>
-            <div
+            <img
+              src={seller.imageUrl}
+              alt={seller.name}
               style={{
                 width: "120px",
                 height: "120px",
                 borderRadius: "50%",
-                backgroundColor: seller.imageColor,
+                objectFit: "cover",
                 marginBottom: "1.5rem",
               }}
-            ></div>
+            />
             <h1 className={styles.heroTitle} style={{ color: "var(--text-primary)" }}>
               {seller.name}
             </h1>
@@ -65,10 +67,11 @@ export default async function SellerDetailPage({ params }: SellerPageProps) {
           <div className={styles.productGrid}>
             {products.map((product) => (
               <div className={styles.productCard} key={product.id}>
-                <div
+                <img
+                  src={product.imageUrl}
+                  alt={product.name}
                   className={styles.productImage}
-                  style={{ backgroundColor: product.imageColor }}
-                ></div>
+                />
                 <h3>{product.name}</h3>
                 <p className={styles.price}>${product.price.toFixed(2)}</p>
                 <Link href={`/products/${product.id}`} className={styles.ctaButton}>

@@ -22,10 +22,11 @@ export default function ProductsPage() {
           <div className={styles.productGrid}>
             {products.map((product) => (
               <div className={styles.productCard} key={product.id}>
-                <div
+                <img
+                  src={product.imageUrl}
+                  alt={product.name}
                   className={styles.productImage}
-                  style={{ backgroundColor: product.imageColor }}
-                ></div>
+                />
                 <h3>{product.name}</h3>
                 <p className={styles.price}>${product.price.toFixed(2)}</p>
                 <p className={styles.seller}>{product.category}</p>

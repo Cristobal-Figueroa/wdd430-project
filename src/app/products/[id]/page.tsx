@@ -45,15 +45,17 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
       <main className={styles.main}>
         <section className={styles.about}>
           <div className={styles.aboutContent} style={{ maxWidth: "900px", textAlign: "left" }}>
-            <div
+            <img
+              src={product.imageUrl}
+              alt={product.name}
               style={{
                 width: "100%",
                 height: "300px",
-                backgroundColor: product.imageColor,
+                objectFit: "cover",
                 borderRadius: "8px",
                 marginBottom: "2rem",
               }}
-            ></div>
+            />
             <h1 className={styles.heroTitle} style={{ color: "var(--text-primary)" }}>
               {product.name}
             </h1>

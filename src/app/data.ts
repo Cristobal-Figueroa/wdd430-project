@@ -6,6 +6,7 @@ export interface Product {
   description: string;
   sellerId: string;
   imageColor: string;
+  imageUrl: string;
 }
 
 export interface Seller {
@@ -14,6 +15,7 @@ export interface Seller {
   bio: string;
   story: string;
   imageColor: string;
+  imageUrl: string;
 }
 
 export const sellers: Seller[] = [
@@ -23,6 +25,7 @@ export const sellers: Seller[] = [
     bio: "Traditional weaving techniques passed down through generations.",
     story: "Maria has been weaving baskets and textiles for over 20 years, using techniques learned from her grandmother in rural Colombia.",
     imageColor: "#D4A574",
+    imageUrl: "https://images.unsplash.com/photo-1597489110496-d571c79a2f97?w=400&h=400&fit=crop",
   },
   {
     id: "clay-studio",
@@ -30,6 +33,7 @@ export const sellers: Seller[] = [
     bio: "Handmade ceramics inspired by nature and modern design.",
     story: "Clay Studio creates unique ceramic pieces that blend organic forms with contemporary aesthetics, all handmade in small batches.",
     imageColor: "#8B5A2B",
+    imageUrl: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=400&fit=crop",
   },
   {
     id: "wood-artisan",
@@ -37,6 +41,7 @@ export const sellers: Seller[] = [
     bio: "Sustainable woodwork from locally sourced materials.",
     story: "Wood Artisan crafts functional wooden pieces from reclaimed and locally sourced wood, focusing on sustainability and natural beauty.",
     imageColor: "#5D4E37",
+    imageUrl: "https://images.unsplash.com/photo-1611486212557-79be6ebfa669?w=400&h=400&fit=crop",
   },
   {
     id: "yarn-dreams",
@@ -44,6 +49,7 @@ export const sellers: Seller[] = [
     bio: "Hand-knitted accessories made with love and care.",
     story: "Yarn Dreams creates cozy, handcrafted accessories using premium natural fibers and traditional knitting patterns.",
     imageColor: "#C8A89A",
+    imageUrl: "https://images.unsplash.com/photo-1623602938438-4a5c5b0c25b7?w=400&h=400&fit=crop",
   },
 ];
 
@@ -56,6 +62,7 @@ export const products: Product[] = [
     description: "Beautiful handwoven storage basket made from natural fibers. Perfect for organizing any room while adding a touch of artisan craftsmanship.",
     sellerId: "maria-crafts",
     imageColor: "#D4A574",
+    imageUrl: "https://images.unsplash.com/photo-1597489110496-d571c79a2f97?w=400&h=300&fit=crop",
   },
   {
     id: "ceramic-vase",
@@ -65,6 +72,7 @@ export const products: Product[] = [
     description: "Elegant handmade ceramic vase with a unique glaze finish. Each piece is one-of-a-kind and crafted with care.",
     sellerId: "clay-studio",
     imageColor: "#8B5A2B",
+    imageUrl: "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=300&fit=crop",
   },
   {
     id: "wooden-bowl",
@@ -74,6 +82,7 @@ export const products: Product[] = [
     description: "Sustainable wooden bowl crafted from locally sourced wood. Food-safe finish and perfect for everyday use.",
     sellerId: "wood-artisan",
     imageColor: "#5D4E37",
+    imageUrl: "https://images.unsplash.com/photo-1611486212557-79be6ebfa669?w=400&h=300&fit=crop",
   },
   {
     id: "knitted-scarf",
@@ -83,6 +92,7 @@ export const products: Product[] = [
     description: "Cozy hand-knitted scarf made from premium wool. Warm, soft, and perfect for chilly days.",
     sellerId: "yarn-dreams",
     imageColor: "#C8A89A",
+    imageUrl: "https://images.unsplash.com/photo-1623602938438-4a5c5b0c25b7?w=400&h=300&fit=crop",
   },
   {
     id: "woven-wall-hanging",
@@ -92,6 +102,7 @@ export const products: Product[] = [
     description: "Intricate woven wall hanging featuring traditional patterns and natural cotton fibers. Adds warmth and texture to any space.",
     sellerId: "maria-crafts",
     imageColor: "#D4A574",
+    imageUrl: "https://images.unsplash.com/photo-1615529182904-14819c35db37?w=400&h=300&fit=crop",
   },
   {
     id: "ceramic-mug",
@@ -101,6 +112,7 @@ export const products: Product[] = [
     description: "Handmade ceramic mug with comfortable handle and unique glaze. Microwave and dishwasher safe.",
     sellerId: "clay-studio",
     imageColor: "#8B5A2B",
+    imageUrl: "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=400&h=300&fit=crop",
   },
   {
     id: "wooden-spatula",
@@ -110,6 +122,7 @@ export const products: Product[] = [
     description: "Set of three handmade wooden utensils including spoon, spatula, and serving fork. Finished with food-safe oil.",
     sellerId: "wood-artisan",
     imageColor: "#5D4E37",
+    imageUrl: "https://images.unsplash.com/photo-1584346133934-a3afd2a33c4c?w=400&h=300&fit=crop",
   },
   {
     id: "knitted-beanie",
@@ -119,6 +132,7 @@ export const products: Product[] = [
     description: "Hand-knitted beanie made from soft merino wool. Stretchy, warm, and stylish for any season.",
     sellerId: "yarn-dreams",
     imageColor: "#C8A89A",
+    imageUrl: "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?w=400&h=300&fit=crop",
   },
 ];
 

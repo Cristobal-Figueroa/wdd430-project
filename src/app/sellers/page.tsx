@@ -22,10 +22,11 @@ export default function SellersPage() {
           <div className={styles.sellerGrid}>
             {sellers.map((seller) => (
               <div className={styles.sellerCard} key={seller.id}>
-                <div
+                <img
+                  src={seller.imageUrl}
+                  alt={seller.name}
                   className={styles.sellerAvatar}
-                  style={{ backgroundColor: seller.imageColor }}
-                ></div>
+                />
                 <h3>{seller.name}</h3>
                 <p>{seller.bio}</p>
                 <Link href={`/sellers/${seller.id}`} className={styles.ctaButton}>

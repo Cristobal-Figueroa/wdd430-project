@@ -190,6 +190,7 @@
 .productImage {
   width: 100%;
   height: 200px;
+  object-fit: cover;
   background-color: var(--border);
   border-radius: 4px;
   margin-bottom: 1rem;
@@ -240,6 +241,7 @@
 .sellerAvatar {
   width: 100px;
   height: 100px;
+  object-fit: cover;
   background-color: var(--border);
   border-radius: 50%;
   margin: 0 auto 1rem;

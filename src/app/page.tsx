@@ -34,25 +34,25 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>Featured Products</h2>
           <div className={styles.productGrid}>
             <Link href="/products/handwoven-basket" className={styles.productCard}>
-              <div className={styles.productImage}></div>
+              <img src="https://images.unsplash.com/photo-1597489110496-d571c79a2f97?w=400&h=300&fit=crop" alt="Handwoven Basket" className={styles.productImage} />
               <h3>Handwoven Basket</h3>
               <p className={styles.price}>$45.00</p>
               <p className={styles.seller}>By Maria's Crafts</p>
             </Link>
             <Link href="/products/ceramic-vase" className={styles.productCard}>
-              <div className={styles.productImage}></div>
+              <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=300&fit=crop" alt="Ceramic Vase" className={styles.productImage} />
               <h3>Ceramic Vase</h3>
               <p className={styles.price}>$65.00</p>
               <p className={styles.seller}>By Clay Studio</p>
             </Link>
             <Link href="/products/wooden-bowl" className={styles.productCard}>
-              <div className={styles.productImage}></div>
+              <img src="https://images.unsplash.com/photo-1611486212557-79be6ebfa669?w=400&h=300&fit=crop" alt="Wooden Bowl" className={styles.productImage} />
               <h3>Wooden Bowl</h3>
               <p className={styles.price}>$38.00</p>
               <p className={styles.seller}>By Wood Artisan</p>
             </Link>
             <Link href="/products/knitted-scarf" className={styles.productCard}>
-              <div className={styles.productImage}></div>
+              <img src="https://images.unsplash.com/photo-1623602938438-4a5c5b0c25b7?w=400&h=300&fit=crop" alt="Knitted Scarf" className={styles.productImage} />
               <h3>Knitted Scarf</h3>
               <p className={styles.price}>$28.00</p>
               <p className={styles.seller}>By Yarn Dreams</p>
@@ -64,17 +64,17 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>Meet Our Artisans</h2>
           <div className={styles.sellerGrid}>
             <Link href="/sellers/maria-crafts" className={styles.sellerCard}>
-              <div className={styles.sellerAvatar}></div>
+              <img src="https://images.unsplash.com/photo-1597489110496-d571c79a2f97?w=400&h=400&fit=crop" alt="Maria's Crafts" className={styles.sellerAvatar} />
               <h3>Maria's Crafts</h3>
               <p>Traditional weaving techniques passed down through generations</p>
             </Link>
             <Link href="/sellers/clay-studio" className={styles.sellerCard}>
-              <div className={styles.sellerAvatar}></div>
+              <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=400&fit=crop" alt="Clay Studio" className={styles.sellerAvatar} />
               <h3>Clay Studio</h3>
               <p>Handmade ceramics inspired by nature and modern design</p>
             </Link>
             <Link href="/sellers/wood-artisan" className={styles.sellerCard}>
-              <div className={styles.sellerAvatar}></div>
+              <img src="https://images.unsplash.com/photo-1611486212557-79be6ebfa669?w=400&h=400&fit=crop" alt="Wood Artisan" className={styles.sellerAvatar} />
               <h3>Wood Artisan</h3>
               <p>Sustainable woodwork from locally sourced materials</p>
             </Link>
