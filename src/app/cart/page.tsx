@@ -1,13 +1,58 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "../page.module.css";
+import CheckoutModal from "../components/CheckoutModal";
+
+interface CartItem {
+  id: string;
+  name: string;
+  price: number;
+  quantity: number;
+}
 
 export default function CartPage() {
-  const cartItems = [
-    { id: "handwoven-basket", name: "Handwoven Basket", price: 45.0, quantity: 1 },
-    { id: "ceramic-mug", name: "Ceramic Mug", price: 22.0, quantity: 2 },
-  ];
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [checkoutTotal, setCheckoutTotal] = useState(0);
+
+  useEffect(() => {
+    const stored = localStorage.getItem("cart");
+    if (stored) {
+      setCartItems(JSON.parse(stored));
+    }
+  }, []);
+
+  const updateCart = (newCart: CartItem[]) => {
+    setCartItems(newCart);
+    localStorage.setItem("cart", JSON.stringify(newCart));
+  };
+
+  const removeItem = (id: string) => {
+    const newCart = cartItems.filter((item) => item.id !== id);
+    updateCart(newCart);
+  };
+
+  const updateQuantity = (id: string, quantity: number) => {
+    if (quantity <= 0) {
+      removeItem(id);
+      return;
+    }
+    const newCart = cartItems.map((item) =>
+      item.id === id ? { ...item, quantity } : item
+    );
+    updateCart(newCart);
+  };
 
   const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+  const handleCheckout = () => {
+    setCheckoutTotal(total);
+    setIsModalOpen(true);
+    localStorage.removeItem("cart");
+    setCartItems([]);
+  };
 
   return (
     <div className={styles.page}>
@@ -23,53 +68,68 @@ export default function CartPage() {
       </header>
 
       <main className={styles.main}>
-        <section className={styles.about}>
-          <div className={styles.aboutContent} style={{ maxWidth: "900px", textAlign: "left" }}>
+        <section className={styles.cartSection}>
+          <div className={styles.cartContainer}>
             <h1 className={styles.sectionTitle} style={{ textAlign: "left" }}>
               Shopping Cart
             </h1>
 
             {cartItems.length === 0 ? (
-              <p>Your cart is empty.</p>
+              <div className={styles.emptyCart}>
+                <p>Your cart is empty.</p>
+                <Link href="/products" className={styles.ctaButton}>Browse Products</Link>
+              </div>
             ) : (
               <>
-                <div style={{ marginBottom: "2rem" }}>
+                <div className={styles.cartList}>
                   {cartItems.map((item) => (
-                    <div
-                      key={item.id}
-                      style={{
-                        display: "flex",
-                        justifyContent: "space-between",
-                        padding: "1rem 0",
-                        borderBottom: "1px solid var(--border)",
-                      }}
-                    >
-                      <div>
-                        <h3 style={{ marginBottom: "0.25rem" }}>{item.name}</h3>
-                        <p className={styles.seller}>Quantity: {item.quantity}</p>
+                    <div key={item.id} className={styles.cartItem}>
+                      <div className={styles.cartItemInfo}>
+                        <h3>{item.name}</h3>
+                        <p className={styles.price} style={{ fontSize: "1.25rem" }}>
+                          ${item.price.toFixed(2)}
+                        </p>
                       </div>
-                      <p className={styles.price} style={{ fontSize: "1.25rem" }}>
-                        ${(item.price * item.quantity).toFixed(2)}
-                      </p>
+                      <div className={styles.cartItemControls}>
+                        <div className={styles.quantityControl}>
+                          <button
+                            onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                            className={styles.quantityButton}
+                          >
+                            -
+                          </button>
+                          <span className={styles.quantityValue}>{item.quantity}</span>
+                          <button
+                            onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                            className={styles.quantityButton}
+                          >
+                            +
+                          </button>
+                        </div>
+                        <p className={styles.price}>
+                          ${(item.price * item.quantity).toFixed(2)}
+                        </p>
+                        <button
+                          onClick={() => removeItem(item.id)}
+                          className={styles.removeButton}
+                        >
+                          Remove
+                        </button>
+                      </div>
                     </div>
                   ))}
                 </div>
 
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    alignItems: "center",
-                    marginBottom: "2rem",
-                  }}
-                >
+                <div className={styles.cartSummary}>
                   <h2>Total</h2>
                   <p className={styles.price} style={{ fontSize: "2rem" }}>
                     ${total.toFixed(2)}
                   </p>
                 </div>
 
-                <button className={styles.primaryButton}>Proceed to Checkout</button>
+                <button onClick={handleCheckout} className={styles.primaryButton}>
+                  Proceed to Checkout
+                </button>
               </>
             )}
           </div>
@@ -79,6 +139,8 @@ export default function CartPage() {
       <footer className={styles.footer}>
         <p>&copy; 2026 Handcrafted Haven. All rights reserved.</p>
       </footer>
+
+      <CheckoutModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} total={checkoutTotal} />
     </div>
   );
 }

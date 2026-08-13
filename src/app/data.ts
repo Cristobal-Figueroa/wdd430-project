@@ -25,7 +25,7 @@ export const sellers: Seller[] = [
     bio: "Traditional weaving techniques passed down through generations.",
     story: "Maria has been weaving baskets and textiles for over 20 years, using techniques learned from her grandmother in rural Colombia.",
     imageColor: "#D4A574",
-    imageUrl: "https://images.unsplash.com/photo-1597489110496-d571c79a2f97?w=400&h=400&fit=crop",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfiLTTWHK0dTqYMl2svJN2kX4XU41F9p90vS5KHqblH01WnpfmCY0uTrM&s=10",
   },
   {
     id: "clay-studio",
@@ -41,7 +41,7 @@ export const sellers: Seller[] = [
     bio: "Sustainable woodwork from locally sourced materials.",
     story: "Wood Artisan crafts functional wooden pieces from reclaimed and locally sourced wood, focusing on sustainability and natural beauty.",
     imageColor: "#5D4E37",
-    imageUrl: "https://images.unsplash.com/photo-1611486212557-79be6ebfa669?w=400&h=400&fit=crop",
+    imageUrl: "https://static01.nyt.com/images/2022/12/05/multimedia/05sp-crafts-cabinets-inyt1/merlin_215232078_287587c6-1453-45bd-be87-65f73b0e4657-articleLarge.jpg?quality=75&auto=webp&disable=upscale",
   },
   {
     id: "yarn-dreams",
@@ -49,7 +49,7 @@ export const sellers: Seller[] = [
     bio: "Hand-knitted accessories made with love and care.",
     story: "Yarn Dreams creates cozy, handcrafted accessories using premium natural fibers and traditional knitting patterns.",
     imageColor: "#C8A89A",
-    imageUrl: "https://images.unsplash.com/photo-1623602938438-4a5c5b0c25b7?w=400&h=400&fit=crop",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTe8kCGQAFd8GP55HVroA5gWmxc9kNLxUgXpHSmRcAvA&s=10",
   },
 ];
 
@@ -62,7 +62,7 @@ export const products: Product[] = [
     description: "Beautiful handwoven storage basket made from natural fibers. Perfect for organizing any room while adding a touch of artisan craftsmanship.",
     sellerId: "maria-crafts",
     imageColor: "#D4A574",
-    imageUrl: "https://images.unsplash.com/photo-1597489110496-d571c79a2f97?w=400&h=300&fit=crop",
+    imageUrl: "https://http2.mlstatic.com/D_NQ_NP_830885-CBT82606535231_022025-O.webp",
   },
   {
     id: "ceramic-vase",
@@ -82,7 +82,7 @@ export const products: Product[] = [
     description: "Sustainable wooden bowl crafted from locally sourced wood. Food-safe finish and perfect for everyday use.",
     sellerId: "wood-artisan",
     imageColor: "#5D4E37",
-    imageUrl: "https://images.unsplash.com/photo-1611486212557-79be6ebfa669?w=400&h=300&fit=crop",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyHxYPo93zhUyn82OUpzR4yW2mPfZR6st8wBo9Nihhh2oWqgS6HZO68b6F&s=10",
   },
   {
     id: "knitted-scarf",
@@ -92,7 +92,7 @@ export const products: Product[] = [
     description: "Cozy hand-knitted scarf made from premium wool. Warm, soft, and perfect for chilly days.",
     sellerId: "yarn-dreams",
     imageColor: "#C8A89A",
-    imageUrl: "https://images.unsplash.com/photo-1623602938438-4a5c5b0c25b7?w=400&h=300&fit=crop",
+    imageUrl: "https://megangoodacre.com/cdn/shop/articles/ganseyscarfknittingpattern.jpg?v=1551643581",
   },
   {
     id: "woven-wall-hanging",

@@ -41,7 +41,7 @@ export default async function SellerDetailPage({ params }: SellerPageProps) {
 
       <main className={styles.main}>
         <section className={styles.about}>
-          <div className={styles.aboutContent} style={{ maxWidth: "900px", textAlign: "left" }}>
+          <div className={styles.detailCard} style={{ maxWidth: "900px", margin: "0 auto" }}>
             <img
               src={seller.imageUrl}
               alt={seller.name}

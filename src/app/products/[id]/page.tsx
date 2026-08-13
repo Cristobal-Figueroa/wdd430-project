@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getProductById, getSellerById } from "../../data";
 import styles from "../../page.module.css";
+import AddToCartButton from "../../components/AddToCartButton";
 
 export function generateStaticParams() {
   return [
@@ -44,7 +45,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
 
       <main className={styles.main}>
         <section className={styles.about}>
-          <div className={styles.aboutContent} style={{ maxWidth: "900px", textAlign: "left" }}>
+          <div className={styles.detailCard} style={{ maxWidth: "900px", margin: "0 auto" }}>
             <img
               src={product.imageUrl}
               alt={product.name}
@@ -72,9 +73,7 @@ export default async function ProductDetailPage({ params }: ProductPageProps) {
               </p>
             )}
             <div style={{ marginTop: "2rem" }}>
-              <Link href="/cart" className={styles.primaryButton}>
-                Add to Cart
-              </Link>
+              <AddToCartButton product={{ id: product.id, name: product.name, price: product.price }} />
             </div>
           </div>
         </section>

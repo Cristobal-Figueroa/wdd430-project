@@ -34,7 +34,7 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>Featured Products</h2>
           <div className={styles.productGrid}>
             <Link href="/products/handwoven-basket" className={styles.productCard}>
-              <img src="https://images.unsplash.com/photo-1597489110496-d571c79a2f97?w=400&h=300&fit=crop" alt="Handwoven Basket" className={styles.productImage} />
+              <img src="https://http2.mlstatic.com/D_NQ_NP_830885-CBT82606535231_022025-O.webp" alt="Handwoven Basket" className={styles.productImage} />
               <h3>Handwoven Basket</h3>
               <p className={styles.price}>$45.00</p>
               <p className={styles.seller}>By Maria's Crafts</p>
@@ -46,13 +46,13 @@ export default function Home() {
               <p className={styles.seller}>By Clay Studio</p>
             </Link>
             <Link href="/products/wooden-bowl" className={styles.productCard}>
-              <img src="https://images.unsplash.com/photo-1611486212557-79be6ebfa669?w=400&h=300&fit=crop" alt="Wooden Bowl" className={styles.productImage} />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyHxYPo93zhUyn82OUpzR4yW2mPfZR6st8wBo9Nihhh2oWqgS6HZO68b6F&s=10" alt="Wooden Bowl" className={styles.productImage} />
               <h3>Wooden Bowl</h3>
               <p className={styles.price}>$38.00</p>
               <p className={styles.seller}>By Wood Artisan</p>
             </Link>
             <Link href="/products/knitted-scarf" className={styles.productCard}>
-              <img src="https://images.unsplash.com/photo-1623602938438-4a5c5b0c25b7?w=400&h=300&fit=crop" alt="Knitted Scarf" className={styles.productImage} />
+              <img src="https://megangoodacre.com/cdn/shop/articles/ganseyscarfknittingpattern.jpg?v=1551643581" alt="Knitted Scarf" className={styles.productImage} />
               <h3>Knitted Scarf</h3>
               <p className={styles.price}>$28.00</p>
               <p className={styles.seller}>By Yarn Dreams</p>
@@ -64,17 +64,17 @@ export default function Home() {
           <h2 className={styles.sectionTitle}>Meet Our Artisans</h2>
           <div className={styles.sellerGrid}>
             <Link href="/sellers/maria-crafts" className={styles.sellerCard}>
-              <img src="https://images.unsplash.com/photo-1597489110496-d571c79a2f97?w=400&h=400&fit=crop" alt="Maria's Crafts" className={styles.sellerAvatar} />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfiLTTWHK0dTqYMl2svJN2kX4XU41F9p90vS5KHqblH01WnpfmCY0uTrM&s=10" alt="Maria's Crafts" className={styles.sellerAvatar} />
               <h3>Maria's Crafts</h3>
               <p>Traditional weaving techniques passed down through generations</p>
             </Link>
-            <Link href="/sellers/clay-studio" className={styles.sellerCard}>
-              <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=400&fit=crop" alt="Clay Studio" className={styles.sellerAvatar} />
-              <h3>Clay Studio</h3>
-              <p>Handmade ceramics inspired by nature and modern design</p>
+            <Link href="/sellers/yarn-dreams" className={styles.sellerCard}>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTe8kCGQAFd8GP55HVroA5gWmxc9kNLxUgXpHSmRcAvA&s=10" alt="Yarn Dreams" className={styles.sellerAvatar} />
+              <h3>Yarn Dreams</h3>
+              <p>Handmade textiles inspired by nature and modern design</p>
             </Link>
             <Link href="/sellers/wood-artisan" className={styles.sellerCard}>
-              <img src="https://images.unsplash.com/photo-1611486212557-79be6ebfa669?w=400&h=400&fit=crop" alt="Wood Artisan" className={styles.sellerAvatar} />
+              <img src="https://static01.nyt.com/images/2022/12/05/multimedia/05sp-crafts-cabinets-inyt1/merlin_215232078_287587c6-1453-45bd-be87-65f73b0e4657-articleLarge.jpg?quality=75&auto=webp&disable=upscale" alt="Wood Artisan" className={styles.sellerAvatar} />
               <h3>Wood Artisan</h3>
               <p>Sustainable woodwork from locally sourced materials</p>
             </Link>
