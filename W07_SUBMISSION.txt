@@ -2,7 +2,7 @@ W07 Project Completion - Canvas Submission Information
 
 1. APPLICATION URL (Vercel)
 
-[UPDATE WITH YOUR VERCEL URL AFTER DEPLOYMENT]
+https://wdd430-projectas.vercel.app/
 
 The Next.js application has been built successfully and is ready for deployment.
 
@@ -37,7 +37,7 @@ The repository contains Next.js application artifacts with:
 
 4. GROUP VIDEO DEMONSTRATION
 
-[UPDATE WITH YOUR VIDEO URL OR FILE NAME]
+https://youtu.be/b88iCeyJ-1A
 
 The video demonstrates the Handcrafted Haven application including:
 - Landing page with hero section, featured products, and artisans
