@@ -1,0 +1,52 @@
+W06 Group Project - Canvas Submission Information
+
+1. PROJECT REPO URL
+
+https://github.com/Cristobal-Figueroa/wdd430-project
+
+The repository contains Next.js application artifacts with:
+- Next.js project with TypeScript and ESLint
+- Landing page for Handcrafted Haven
+- Design documentation (DESIGN.md)
+- User stories and work items (USER_STORIES.md)
+- Project README
+
+2. PROJECT BOARD URL
+
+https://github.com/users/Cristobal-Figueroa/projects/3
+
+The board includes the following columns:
+- Ready
+- Backlog
+- In progress
+- In review
+- Done
+
+Work completed since W04:
+- Landing Page completed and in Done
+- Product Browsing and Product Detail View continued in In progress
+- Additional user stories moved to Ready for upcoming development
+
+3. MEETING SUMMARY
+
+Meeting Summary:
+- Participant: Cristobal Figueroa (individual project)
+- Project: Handcrafted Haven (Next.js)
+- Date: August 6, 2026
+
+Challenge:
+The main challenge during the W06 build phase was maintaining consistent progress while balancing multiple project responsibilities. Implementing the product catalog features required careful attention to component design, responsive layout, and consistency with the existing design theme. Working individually meant managing all development tasks without the ability to divide work among team members.
+
+Success:
+Successfully advanced the product browsing and product detail view features, with the landing page completed and serving as the foundation for additional pages. The project board was updated to reflect current progress, and the design documentation proved valuable in maintaining consistency across components. The Next.js application structure is now established and ready for additional features.
+
+Insight:
+The W06 build phase reinforced the value of incremental progress. Rather than trying to complete everything at once, breaking down user stories into smaller tasks and updating the project board regularly has made the individual workflow more manageable. This approach has helped maintain momentum and clearly track what has been completed and what remains to be done.
+
+Meeting Content:
+- Reviewed progress from W04 and confirmed continued development of product catalog features
+- Discussed which user stories to prioritize for the W06 build phase
+- Evaluated the landing page as a foundation for product browsing and detail pages
+- Updated GitHub Projects board to reflect current status and upcoming work
+- Identified remaining tasks for product grid, filtering, and detail view implementation
+- Planned next steps for completing the product catalog features
